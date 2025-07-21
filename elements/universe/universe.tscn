@@ -1,11 +1,22 @@
 [gd_scene load_steps=12 format=3 uid="uid://1heqaiv22fgq"]
 
 [ext_resource type="PackedScene" uid="uid://bb2lp50sjndus" path="res://elements/world/world.tscn" id="1_o8dj2"]
-[ext_resource type="Script" path="res://elements/universe/universe.gd" id="1_tj5bo"]
+[ext_resource type="Script" uid="uid://bkviw4ib1j3e8" path="res://elements/universe/universe.gd" id="1_tj5bo"]
 [ext_resource type="PackedScene" uid="uid://byosvo2hx7df8" path="res://elements/player/player.tscn" id="2_46g3y"]
 [ext_resource type="Terrain3DStorage" uid="uid://dq86lo0ibriqp" path="res://elements/universe/universe.res" id="2_bgqu1"]
-[ext_resource type="Texture2D" path="res://elements/world/ground037_nrm_rgh.dds" id="3_1y3w3"]
+[ext_resource type="Texture2D" uid="uid://b6fufwhs5g1nu" path="res://elements/world/ground037_nrm_rgh.dds" id="3_1y3w3"]
 [ext_resource type="PackedScene" uid="uid://grvayjmmafd5" path="res://elements/dummy/dummy.tscn" id="8_dmw66"]
+<<<<<<< Updated upstream
+=======
+[ext_resource type="Resource" uid="uid://x7wjyuq5o527" path="res://data/items/sword.tres" id="8_okehv"]
+[ext_resource type="Script" uid="uid://dw62j7wi0l5y4" path="res://user_interface/ui_root/ui_root.gd" id="9_us8tb"]
+[ext_resource type="PackedScene" uid="uid://6r4rm2hswvtu" path="res://user_interface/inventory_dialog/inventory_dialog.tscn" id="10_kvpsg"]
+[ext_resource type="Resource" uid="uid://bs04rbmicblmd" path="res://data/items/iron_ore.tres" id="10_ncp5a"]
+[ext_resource type="Resource" uid="uid://dqelj5ln4753c" path="res://data/items/pickaxe.tres" id="11_1ss3q"]
+[ext_resource type="PackedScene" uid="uid://d2eutmynpisem" path="res://user_interface/crafting_dialog/crafting_dialog.tscn" id="12_ce2h0"]
+[ext_resource type="Resource" uid="uid://devjlrqi4j25h" path="res://data/all_recipes.tres" id="12_x3ukg"]
+[ext_resource type="PackedScene" uid="uid://v82xc5d3kigg" path="res://elements/pickup/pickup.tscn" id="13_u7pcp"]
+>>>>>>> Stashed changes
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_wrhcx"]
 noise_type = 0
