@@ -1,0 +1,20 @@
+[gd_scene load_steps=6 format=3 uid="uid://cviklkqmefuc1"]
+
+[ext_resource type="PackedScene" uid="uid://bb2lp50sjndus" path="res://elements/world/world.tscn" id="1_k3fik"]
+[ext_resource type="Script" uid="uid://dfnugilugj0me" path="res://elements/universe/universe.gd" id="1_t1iqf"]
+[ext_resource type="PackedScene" uid="uid://grvayjmmafd5" path="res://elements/dummy/dummy.tscn" id="2_i26oj"]
+[ext_resource type="PackedScene" uid="uid://byosvo2hx7df8" path="res://elements/player/player.tscn" id="3_yn2n3"]
+[ext_resource type="PackedScene" uid="uid://brsyy0hbjk5a8" path="res://elements/camera/camera.tscn" id="4_yn2n3"]
+
+[node name="Universe" type="Node3D"]
+script = ExtResource("1_t1iqf")
+
+[node name="World" parent="." instance=ExtResource("1_k3fik")]
+
+[node name="Dummy" parent="World" instance=ExtResource("2_i26oj")]
+
+[node name="Player" parent="World" instance=ExtResource("3_yn2n3")]
+transform = Transform3D(0.783477, 0, 0.621421, 0, 1, 0, -0.621421, 0, 0.783477, 0, 0, 4.76617)
+
+[node name="Camera" parent="World" instance=ExtResource("4_yn2n3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6.09255)

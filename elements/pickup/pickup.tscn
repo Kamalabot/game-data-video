@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://v82xc5d3kigg"]
 
-[ext_resource type="Script" path="res://elements/pickup/pickup.gd" id="1_fbiux"]
+[ext_resource type="Script" uid="uid://cnupjvx7wtw72" path="res://elements/pickup/pickup.gd" id="1_fbiux"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_n2bni"]
 height = 1.75215

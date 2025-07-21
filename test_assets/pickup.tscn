@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://p8kwvr7e005f"]
+
+[ext_resource type="Script" uid="uid://26k7mh5xiex" path="res://test_assets/pickup.gd" id="1_cmcq6"]
+[ext_resource type="Resource" uid="uid://bt48iysa84dqk" path="res://test_assets/pick_axe.tres" id="2_badfc"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_itrxv"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_cmcq6")
+item = ExtResource("2_badfc")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.95687, -11.8473)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0910454, 8.65358, 11.8343)
+shape = SubResource("CapsuleShape3D_itrxv")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

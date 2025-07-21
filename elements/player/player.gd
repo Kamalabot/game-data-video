@@ -13,8 +13,15 @@ extends CharacterBody3D
 
 var inventory:Inventory = Inventory.new()
 
+# After the tres has been created
 func on_item_picked_up(item:Item):
 	inventory.add_item(item)
+
+#func on_item_picked_up(item_id:String):
+	#print("I got a ", Items.Database[item_id].name)
+
+#func on_item_picked_up(item:Item):
+	#print("I got a ", item.name)
 
 func _physics_process(delta) -> void:
 	if Input.get_mouse_mode() != Input.MOUSE_MODE_CAPTURED:
@@ -64,6 +71,3 @@ func get_camera_relative_input() -> Vector3:
 func _input(event: InputEvent) -> void:
 	if event.is_action_released("down") or event.is_action_released("up"):
 		velocity.y = 0
-
-
-
