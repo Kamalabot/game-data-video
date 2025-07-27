@@ -1,5 +1,6 @@
 class_name InventoryDialog
 extends PanelContainer
+# observe the Class is extending PanelContainer
 
 @export var slot_scene:PackedScene
 
@@ -8,14 +9,14 @@ extends PanelContainer
 
 
 func open(inventory:Inventory):
-	show()
+	show() # the canvasItem is made visible
 	
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	
 	#grid_container.display(inventory.get_items())
 	for child in grid_container.get_children():
 		child.queue_free()
-			
+	# This will add one slot at a time		
 	for item in inventory.get_items():
 		var slot = slot_scene.instantiate()
 		grid_container.add_child(slot)
